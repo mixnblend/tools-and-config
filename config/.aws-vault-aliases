@@ -1,0 +1,4 @@
+# AWS
+alias awsdev="aws-vault exec your-aws-dev-profile -- "
+alias awsmaster="aws-vault exec your-aws-master-profile -- "
+alias awsprod="aws-vault exec your-aws-prod-profile-- "

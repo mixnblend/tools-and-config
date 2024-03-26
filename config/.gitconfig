@@ -1,0 +1,35 @@
+[user]
+	name = Jonathan Arnold
+	email = my-email-here
+[core]
+	excludesfile = /Users/<username>/.gitignore_global
+        pager = delta
+[interactive]
+  	 diffFilter = delta --color-only
+[alias]
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	ds = diff --staged
+	dm = diff --color-moved=plain
+        globalconfig = config --global --list --show-origin
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
+[delta]
+    line-numbers = true
+    side-by-side = true
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+	syntax-theme = 1337
+[merge]
+    conflictstyle = diff3
+[init]
+	defaultBranch = main
